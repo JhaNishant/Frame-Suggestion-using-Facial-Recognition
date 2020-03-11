@@ -1,0 +1,91 @@
+.logo{
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-right: 0.85%;
+    border-radius: 15px;
+}
+.demo {
+    padding: 6em 2em;
+  }
+  
+  demo {
+    padding: 6em 2em;
+  }
+  
+  .demo h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 1em;
+  }
+  
+  .demo .flipster {
+    margin: 0 -2em;
+  }
+
+body{
+    background-color: black;
+   
+}
+
+@font-face {
+    font-family: "PromptFont";
+    src: url("prompt-font.ttf");
+    }
+
+.promptClass{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+#prompt{
+    font-family: 'PromptFont';
+    font-size: 20px;
+    color: white;
+    
+}
+
+.WebcamClass{
+
+    text-align: center;
+    border-radius: 2%;
+    border-style: solid;
+    border: 4px;
+    border-color: white;
+
+}
+#webcam-container{
+    border-radius: 2%;
+    border-style: solid;
+    border: 4px;
+    border-color: white;
+
+   
+}
+#frameType{
+  font-family: 'PromptFont';
+  font-size: 20px;
+  color: white;
+  
+}
+
+#facenoface, #sex, #faceshape{
+  font-family: 'PromptFont';
+  font-size: 14px;
+  color: white;
+}
+
+.status{
+  position: absolute;
+  margin-left: 1200px;
+  margin-bottom: 800px;
+
+
+}
+
+

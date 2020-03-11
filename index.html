@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        
+        <link rel="stylesheet" href="dist/jquery.flipster.min.css">
+        <script src="dist/jquery.min.js"></script>
+        <script src="dist/jquery.flipster.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+        <script src="script.js"></script>
+
+   
+    
+    </head>
+
+<body>
+    <div class="logo" style="margin-top:30px">
+        <img src="logo.svg">
+    </div>
+<div class="promptClass">
+    <p id="prompt">Guess who's looking nice today ;)</p>
+</div>
+
+<div class="WebcamClass">
+    <div id="webcam-container"></div>
+</div>
+<div class="status">
+    <h1 id="facenoface"></h1>
+    <h3 id="sex"></h3>
+    <h3 id="faceshape"></h3>
+    <h3 id="frametype"></h3>
+</div>
+<div id="label-container"></div>
+
+
+<article id="demo-carousel" class="demo" style="padding-top: 5px; " >
+
+    <h2 id="frameType"></h2>
+
+
+    <div id="carousel">
+        <ul class="flip-items">
+            <li data-flip-title="Red">  
+                <img id="f1" src="frames/wayfarer/1.jpg" width="400px">
+            </li>
+            <li data-flip-title="Red" >
+                <img id="f2" src="frames/wayfarer/2.jpg" width="400px">
+             </li>
+            <li data-flip-title="Deep Lilac" >
+                <img id="f3" src="frames/wayfarer/3.jpg" width="400px">
+            </li>
+            <li data-flip-title="Daisy Bush">
+                <img src="frames/wayfarer/celeb.jpg" width="400px">
+            </li>
+            <li data-flip-title="Cerulean Blue">
+                <img src="frames/wayfarer/5.jpg" width="400px">
+            </li>
+            <li data-flip-title="Dodger Blue">
+                <img src="frames/wayfarer/6.jpg"  width="400px">
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+
+
+<script>
+    var carousel = $("#carousel").flipster({
+        style: 'carousel',
+        spacing: -0.5,
+        nav: true,
+        buttons:   true,
+    });
+</script>
+
+<pre class="code">$("#carousel").flipster({
+    style: 'carousel',
+    spacing: -0.5,
+    nav: true,
+    buttons: true,
+});</pre>
+
+</article>
+
+
+
+</body>
+
+  
+</html>
